@@ -1,0 +1,149 @@
+
+
+/* 
+    Created on  : Dec 28, 2016, 6:35:18 PM
+    Author      : Prakasam Mathaiyan
+    URL         : http://www.prakasam.co
+    E-Mail      : hello@prakasam.co
+*/
+
+
+
+.panel {
+    margin-bottom: 25px;
+    border: 0px solid transparent;
+}
+
+.panel-heading {
+    padding: 17px 15px;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-title { font-weight: 600; }
+
+.panel-default>.panel-body {
+    padding-top: 0;
+}
+
+.panel-default>.panel-heading {
+    color: #62627C;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+.panel-success>.panel-heading {
+    color: #FFFFFF;
+    background-color: #c2d81e;
+    border-color: #c2d81e;
+}
+
+.panel-info>.panel-heading {
+    color: #FFFFFF;
+    background-color: #1bc9e4;
+    border-color: #1bc9e4;
+}
+
+.panel-warning>.panel-heading {
+    color: #FFFFFF;
+    background-color: #febf34;
+    border-color: #febf34;
+}
+
+.panel-danger>.panel-heading {
+    color: #FFFFFF;
+    background-color: #ff4a5d;
+    border-color: #ff4a5d;
+}
+
+.panel-inverse>.panel-heading {
+    color: #FFFFFF;
+    background-color: #272a49;
+    border-color: #272a49;
+}
+
+    /*CARD TOOLS*/
+.panel .tools {
+    position: absolute;
+    right: 35px;
+    top: 16px;
+}
+
+.panel .tools>.btn-link{
+    color: rgba(0,0,0,.4);
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.panel .tools>.btn-link:focus,
+.panel .tools>.btn-link:active,
+.panel .tools>.btn-link:hover{
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+}
+
+.panel.panel-primary .tools>.btn-link,
+.panel.panel-success .tools>.btn-link,
+.panel.panel-info .tools>.btn-link,
+.panel.panel-warning .tools>.btn-link,
+.panel.panel-danger .tools>.btn-link,
+.panel.panel-inverse .tools>.btn-link{
+    color: rgba(255,255,255,.6);
+}
+
+.panel.panel-primary .tools>.btn-link:hover,
+.panel.panel-success .tools>.btn-link:hover,
+.panel.panel-info .tools>.btn-link:hover,
+.panel.panel-warning .tools>.btn-link:hover,
+.panel.panel-danger .tools>.btn-link:hover,
+.panel.panel-inverse .tools>.btn-link:hover{
+    color: rgba(255,255,255,1);
+}
+
+.panel .tools .panel-collapse {
+    border:none;
+}
+
+.panel .tools .panel-collapse:before {
+    content: "\e648";
+    display: inline;
+    font-family: 'themify';
+    font-weight: 300;
+    height: auto;
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.panel .tools .panel-expand:before {
+    content: "\e64b";
+    display: inline;
+    font-family: 'themify';
+    height: auto;
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.panel-full-screen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    z-index: 10000
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+

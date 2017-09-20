@@ -1,0 +1,61 @@
+<?php
+
+return [
+    'local' => [
+        'type' => 'Local',
+        'root' => storage_path('app'),
+    ],
+    's3' => [
+        'type' => 'AwsS3',
+        'key'    => '',
+        'secret' => '',
+        'region' => 'us-east-1',
+        'bucket' => '',
+        'root'   => '',
+    ],
+    'gcs' => [
+        'type' => 'Gcs',
+        'key'    => '',
+        'secret' => '',
+        'bucket' => '',
+        'root'   => '',
+    ],
+    'rackspace' => [
+        'type' => 'Rackspace',
+        'username' => '',
+        'key' => '',
+        'container' => '',
+        'zone' => '',
+        'endpoint' => 'https://identity.api.rackspacecloud.com/v2.0/',
+        'root' => '',
+    ],
+    'dropbox' => [
+        'type' => 'Dropbox',
+        'token' => 'kCgcmVHgZvAAAAAAAAAACnjoCVQ10u0amQGz2L0C_C3ZNN-7eVsfhZ296VVlX0D6',
+        'key' => '0bwbvc6n6yxd125',
+        'secret' => 'tnn2cn8l84gebqc',
+        'app' => 'backup_ahass',
+        'root' => 'backup_ahass',
+    ],
+    'ftp' => [
+        'type' => 'Ftp',
+        'host' => '',
+        'username' => '',
+        'password' => '',
+        'port' => 21,
+        'passive' => true,
+        'ssl' => true,
+        'timeout' => 30,
+        'root' => '',
+    ],
+    'sftp' => [
+        'type' => 'Sftp',
+        'host' => '',
+        'username' => '',
+        'password' => '',
+        'port' => 21,
+        'timeout' => 10,
+        'privateKey' => '',
+        'root' => '',
+    ],
+];

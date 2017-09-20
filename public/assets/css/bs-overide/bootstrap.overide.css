@@ -1,0 +1,308 @@
+
+
+/* 
+    Created on  : Jan 06, 2017, 10:49:33 AM
+    Updated On  : Jan 06, 2017, 10:49:33 AM
+    Author      : Prakasam Mathaiyan
+    URL         : http://www.prakasam.co
+    E-Mail      : hello@prakasam.co
+*/
+
+
+
+
+
+
+pre {
+    padding: 5px 10px;
+    padding-left: 30px;
+    font-size: 100%;
+    color: #181A21;
+    background-color: #DEEAEE;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    line-height: 1.7;
+    position: relative;
+    border: none;
+}
+
+pre::after {
+    content: '\f121';
+    position: absolute;
+    padding: 2px 0 0 0;
+    width: 20px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 10px;
+    background-color: #272727;
+    color: #fff;
+    font-family: 'FontAwesome';
+    text-align: center;
+}
+
+
+
+/*******************************************************************************
+        ## PADDING
+*******************************************************************************/
+
+.no-padding{ padding: 0px; }
+
+.p-xs{ padding: 5px; }
+.p-sm{ padding: 10px; }
+.p-md{ padding: 20px; }
+.p-lg{ padding: 40px; }
+
+.pt-xs{ padding-top: 5px; }
+.pt-sm{ padding-top: 10px; }
+.pt-md{ padding-top: 20px; }
+.pt-lg{ padding-top: 40px; }
+
+.pb-xs{ padding-bottom: 5px; }
+.pb-sm{ padding-bottom: 10px; }
+.pb-md{ padding-bottom: 20px; }
+.pb-lg{ padding-bottom: 40px; }
+
+.pl-xs{ padding-left: 5px; }
+.pl-sm{ padding-left: 10px; }
+.pl-md{ padding-left: 20px; }
+.pl-lg{ padding-left: 40px; }
+
+.pr-xs{ padding-right: 5px; }
+.pr-sm{ padding-right: 10px; }
+.pr-md{ padding-right: 20px; }
+.pr-lg{ padding-right: 10px; }
+
+
+
+
+/*******************************************************************************
+        ## MARGIN
+*******************************************************************************/
+
+.no-margin{margin: 0px !important;}
+.mb-0 { margin-bottom: 0; }
+
+.m-xs{ margin: 5px; }
+.m-sm{ margin: 10px; }
+.m-md{ margin: 20px; }
+.m-lg{ margin: 40px; }
+
+.mt-xs{ margin-top: 5px; }
+.mt-sm{ margin-top: 10px; }
+.mt-md{ margin-top: 20px; }
+.mt-lg{ margin-top: 40px; }
+
+.mb-xs{ margin-bottom: 5px; }
+.mb-sm{ margin-bottom: 10px; }
+.mb-md{ margin-bottom: 20px; }
+.mb-lg{ margin-bottom: 40px; }
+
+.ml-xs{ margin-left: 5px; }
+.ml-sm{ margin-left: 10px; }
+.ml-md{ margin-left: 20px; }
+.ml-lg{ margin-left: 40px; }
+
+.mr-xs{ margin-right: 5px; }
+.mr-sm{ margin-right: 10px; }
+.mr-md{ margin-right: 20px; }
+.mr-lg{ margin-right: 40px; }
+
+
+
+
+/*******************************************************************************
+        ## BORDER
+*******************************************************************************/
+.no-border{ border: none!important; }
+
+.bb-1{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+
+
+
+/*******************************************************************************
+        ## BREADCRUMB & PAGINATION
+*******************************************************************************/
+.page-header {
+    padding: 0px 15px;
+    margin: 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.page-header h1{
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.page-header h1 small{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .page-header {
+        padding-top:15px;
+        padding-bottom: 15px
+    }
+}
+
+.page-header.no-breadcrumb {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.page-header.full-bg {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.page-header.full-bg>.container {
+    position: relative
+}
+
+@media (min-width: 768px) {
+    .page-header.full-bg>.container {
+        padding:25px 0;
+        padding-left: 42px
+    }
+}
+
+@media (max-width: 767px) {
+    .page-header.full-bg>.container {
+        padding-top:15px;
+        padding-bottom: 15px
+    }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    border: none;
+    border-width: 1px 0;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.breadcrumb>li+li:before {
+    content: "\e649";
+    color: #c6cbd7;
+    position: relative;
+    font-size: 9px;
+    top: 1px;
+    left: -2px;
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.breadcrumb-wrap .breadcrumb {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+@media (min-width: 768px) {
+    .breadcrumb-wrap .breadcrumb {
+        padding-left:28px
+    }
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-wrap .breadcrumb {
+        padding-left:0
+    }
+}
+
+
+
+
+
+.pagination>li:first-child>a, 
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pagination>li:last-child>a, 
+.pagination>li:last-child>span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.pagination.rounded > li > a, .pagination > li > span {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+/*******************************************************************************
+                    ## PROGRESS BAR
+*******************************************************************************/
+
+.progress {
+    background-color: rgba(0,0,0,.1);
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar {
+    background-color: #5f69e0;
+    font-size: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.progress-lg{ height: 40px; }
+.progress-md{ height: 25px; }
+.progress-sm{ height: 10px;}
+.progress-xs{ height: 5px; }
+.progress-xxs{ height: 2px; }
+
+
+
+
+
+
+
+.alpha-index-bar{
+    display: table;
+    width: 100%;
+}
+
+
+.alpha-index-bar > li {
+    text-align: center;
+    display: table-cell;
+    font-size: 15px;
+}
+
+.alpha-index-bar > li > a > sup{
+    font-size: 70%;
+    color: #FF4859;
+    text-decoration: none;
+}
