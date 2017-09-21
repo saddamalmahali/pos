@@ -132,7 +132,6 @@ Route::group(['middleware'=>['auth']], function(){
     Route::post('/admin/laporan/penjualan_barang', 'LaporanController@index_penjualan_barang');
     Route::post('/admin/laporan/penjualan_barang/detile', 'LaporanController@detile_penjualan_barang');
 
-    Route::get('/admin/laporan/index', 'HomeController@tentang_aplikasi');
     Route::get('/admin/setting/index', 'HomeController@setting_index');
     Route::post('/admin/setting/simpan', 'HomeController@simpan_setting');
 });

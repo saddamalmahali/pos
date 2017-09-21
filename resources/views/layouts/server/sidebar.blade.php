@@ -65,10 +65,6 @@
                     <i class="fa fa-gear"></i>
                     <span class="nav-text">Setting Toko</span>
                 </a>
-                <a href="{{url('/admin/laporan/index')}}" >
-                    <i class="fa fa-info-circle"></i>
-                    <span class="nav-text">Tentang</span>
-                </a>
             </li>
         </ul>
 
