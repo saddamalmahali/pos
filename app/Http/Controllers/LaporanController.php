@@ -100,7 +100,7 @@ class LaporanController extends Controller
         $pdf->Ln();
         $pdf->Ln();
         $pdf->SetFont('Arial','B',14);
-        $pdf->Cell(0,10,"Laporan Penjualan Detile Sparepart/Jasa Service",0,"","C");
+        $pdf->Cell(0,10,"Laporan Penjualan Barang",0,"","C");
         $pdf->SetFont('Arial','B',12);
         $pdf->Ln();
         $pdf->cell(0, 8, "Tanggal : ".date('d-m-y', strtotime($tanggal)), 0, "", "C");
@@ -152,31 +152,31 @@ class LaporanController extends Controller
             $i = 0;
             $total_transaksi = 0;
             $total_transaksi_sp = 0;
-            $pdf->Cell(275,7," Service",1, "",false, 1);
-            $pdf->Ln();
-            $y = 0;
-            foreach ($penjualan->service as $service) {
-                $pdf->SetFont("Arial","",10);
-                $pdf->Cell(20,7,$y+1,1,"","C");
-                if($service->service != null){
-                    $pdf->Cell(95,7,$service->service->kode.' | '.$service->service->nama,1,"","L");
-                }else{
-                    $pdf->Cell(95,7,"",1,"","L");
-                }
+            // $pdf->Cell(275,7," Service",1, "",false, 1);
+            // $pdf->Ln();
+            // $y = 0;
+            // foreach ($penjualan->service as $service) {
+            //     $pdf->SetFont("Arial","",10);
+            //     $pdf->Cell(20,7,$y+1,1,"","C");
+            //     if($service->service != null){
+            //         $pdf->Cell(95,7,$service->service->kode.' | '.$service->service->nama,1,"","L");
+            //     }else{
+            //         $pdf->Cell(95,7,"",1,"","L");
+            //     }
 
-                $pdf->Cell(30,7,"",1,"","R");
-                $pdf->Cell(30,7,"",1,"","C");
-                $pdf->cell(20,7,"",1,"","C");
-                $pdf->cell(20,7,"",1,"","C");
-                $pdf->cell(25,7,$service->discount,1,"","C");
-                $pdf->cell(35,7,number_format($service->harga),1,"","R");
-                $total_transaksi = $total_transaksi+$service->harga;
-                $pdf->Ln();
+            //     $pdf->Cell(30,7,"",1,"","R");
+            //     $pdf->Cell(30,7,"",1,"","C");
+            //     $pdf->cell(20,7,"",1,"","C");
+            //     $pdf->cell(20,7,"",1,"","C");
+            //     $pdf->cell(25,7,$service->discount,1,"","C");
+            //     $pdf->cell(35,7,number_format($service->harga),1,"","R");
+            //     $total_transaksi = $total_transaksi+$service->harga;
+            //     $pdf->Ln();
 
-                $y++;
-            }
+            //     $y++;
+            // }
             $pdf->SetFont("Arial","B",10);
-            $pdf->Cell(275,7," Sparepart",1, "",false, 1);
+            $pdf->Cell(275,7," Barang",1, "",false, 1);
             $pdf->Ln();
             foreach ($penjualan->detile as $detile) {
                 $pdf->SetFont("Arial","",10);
