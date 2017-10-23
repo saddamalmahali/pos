@@ -68,9 +68,9 @@
                                 <td>:</td>
                                 <td>
                                     <select name="pelanggan" class="form-control select2Search">
-                                        <option value="" selected disabled>Pilih Pembeli</option>
+                                        <option value="" selected disabled>Pilih Pelanggan</option>
                                         @foreach($data_pelanggan as $pelanggan)
-                                            <option value="{{$pelanggan->id}}">{{$pelanggan->no_plat}}</option>
+                                            <option value="{{$pelanggan->id}}">{{$pelanggan->kode.' | '.$pelanggan->nama}}</option>
                                         @endforeach
                                     </select>
                                 </td>

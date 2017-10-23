@@ -1,7 +1,7 @@
 @extends('layouts.server.main')
 @section('content')
     <div class="page-header">
-        <h1>Data Karyawan</h1>
+        <h1>Data Barang</h1>
         <ol class="breadcrumb">
             <li><a href="{{url('/home')}}">Dasboard</a></li>
             <li><a href="{{url('/master/barang')}}">Data Barang</a></li>

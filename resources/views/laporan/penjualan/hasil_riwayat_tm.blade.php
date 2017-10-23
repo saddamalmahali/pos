@@ -63,7 +63,7 @@
                                     <th width="10%" class="text-center">No</th>
                                     <th width="20%" class="text-center">Nota</th>
                                     <th class="text-center">Tanggal</th>
-                                    <th class="text-center">Total SP</th>
+                                    <th class="text-center">Total Brg</th>
                                     <th class="text-center">Jumlah Harga</th>
                                 </tr>
                             </thead>

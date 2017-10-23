@@ -20,6 +20,7 @@
                         <li><a href="{{url('/master/karyawan')}}" {{url()->full() == url('/master/karyawan') ? 'active' : ''}}>Karyawan</a></li>
                         <li><a href="{{url('/master/barang')}}">Master Barang</a></li>
                         <li><a href="{{url('/master/admin/pembeli')}}">Data Pembeli</a></li>
+                        <li><a href="{{url('/master/admin/pembeli')}}">Data Pembeli</a></li>
                         <li><a href="{{url('/master/supplier')}}">Data Supplier</a></li>
                     </ul>
                 </div>

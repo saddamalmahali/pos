@@ -45,7 +45,7 @@
                                                         <th width="100px" style="vertical-align:middle; text-align:center;">Nota</th>
                                                         <th width="200px" style="vertical-align:middle; text-align:center;">Tanggal Pembelian</th>
                                                         <th width="150px" style="vertical-align:middle; text-align:center;">Supplier</th>
-                                                        <th width="150px" style="vertical-align:middle; text-align:center;">Jumlah SP</th>
+                                                        <th width="150px" style="vertical-align:middle; text-align:center;">Jumlah Brg</th>
                                                         <th width="100px" style="vertical-align:middle; text-align:center;">Jumlah</th>
                                                     </tr>
                                                 </thead>
@@ -92,7 +92,7 @@
                                             <div class="col-md-4 pull-right">
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Total SP</th>
+                                                        <th>Total Barang</th>
                                                         <td>:</td>
                                                         <td align="right">{{$total_sp}}</td>
                                                     </tr>

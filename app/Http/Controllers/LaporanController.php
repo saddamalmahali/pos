@@ -195,7 +195,7 @@ class LaporanController extends Controller
                 $i++;
             }
             $pdf->SetFont("Arial","B",10);
-            $pdf->Cell(145,7,"Total Sparepart Transaksi",1,"","R");
+            $pdf->Cell(145,7,"Total Transaksi",1,"","R");
             $pdf->Cell(30,7,number_format($total_transaksi_sp),1,"","C");
             $pdf->Cell(65,7,"Sub Total Transaksi",1,"","R");
             $pdf->Cell(35,7,number_format($total_transaksi),1,"","R");
@@ -204,7 +204,7 @@ class LaporanController extends Controller
             $pdf->Ln();
         }
         $pdf->SetFont("Arial","B",10);
-        $pdf->Cell(145,7,"Total Sparepart",1,"","R", 1);
+        $pdf->Cell(145,7,"Total",1,"","R", 1);
         $pdf->Cell(30,7,number_format($total_sp),1,"","C", 1);
         $pdf->Cell(65,7,"Total Transaksi",1,"","R", 1);
         $pdf->Cell(35,7,number_format($total),1,"","R", 1);
@@ -313,7 +313,7 @@ class LaporanController extends Controller
         $pdf->Ln();
         $pdf->Ln();
         $pdf->SetFont('Arial','B',14);
-        $pdf->Cell(0,10,"Laporan Pembelian Detile Sparepart",0,"","C");
+        $pdf->Cell(0,10,"Laporan Pembelian Detile Barang",0,"","C");
         $pdf->SetFont('Arial','B',12);
         $pdf->Ln();
         $bulan = "";
@@ -414,7 +414,7 @@ class LaporanController extends Controller
                 $i++;
             }
             $pdf->SetFont("Arial","B",10);
-            $pdf->Cell(170,7,"Total Sparepart Transaksi",1,"","R");
+            $pdf->Cell(170,7,"Total Transaksi",1,"","R");
             $pdf->Cell(30,7,number_format($total_transaksi_sp),1,"","C");
             $pdf->Cell(40,7,"Sub Total Transaksi",1,"","R");
             $pdf->Cell(35,7,number_format($total_transaksi),1,"","R");
@@ -423,7 +423,7 @@ class LaporanController extends Controller
             $pdf->Ln();
         }
         $pdf->SetFont("Arial","B",10);
-        $pdf->Cell(170,7,"Total Sparepart",1,"","R", 1);
+        $pdf->Cell(170,7,"Total",1,"","R", 1);
         $pdf->Cell(30,7,number_format($total_sp),1,"","C", 1);
         $pdf->Cell(40,7,"Total Transaksi",1,"","R", 1);
         $pdf->Cell(35,7,number_format($total),1,"","R", 1);
